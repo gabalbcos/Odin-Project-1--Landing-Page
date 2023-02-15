@@ -1,0 +1,115 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #1F2937;
+    margin: 1em 5em;
+}
+
+
+/*HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #ffffff;
+    padding: 12px 0;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+   
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* First Section */
+
+.section-1 {
+    color: #ffffff;
+
+
+}
+
+.box-1{
+    display:flex;
+    justify-content: space-between;  
+    height: auto;
+    width: 200px;
+    gap: 2em;
+}
+
+
+.introduction {
+
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+
+}
+
+
+figure {
+    height: auto;
+    width: 200px;
+    margin: 0;
+}
+
+
+
+/* Section-2 */
+
+.section-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+
+.images-with-subtext {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-rows: repeat(1, auto);
+	grid-gap: 3rem;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem ;
+
+}
+
+.images-with-subtext img {
+    background-color: #565656;
+	border-radius: 7%;
+	box-shadow: .5em .5em 1em #000000;
+	transition: transform 0.3s ease-out;
+}
