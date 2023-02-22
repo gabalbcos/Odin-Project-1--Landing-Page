@@ -163,7 +163,21 @@ img {
      align-items: center;
     align-content: center;
     font-weight: 900;
-    color: rgb(32, 32, 83);
+    color: aliceblue;
+}
+
+.quote {
+    width: 80%;
+    margin: auto;
+}
+
+.section-3 blockquote{
+    font-size: 2em;
+}
+
+.section-3 p {
+    margin: 0;
+    text-align: center;
 }
 
 /* Section 4 */
