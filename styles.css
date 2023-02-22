@@ -1,17 +1,19 @@
 html{
     box-sizing: border-box;
+    margin: 0;
 }
 
 *,
 *::before,
 *::after{
     box-sizing: inherit;
+    
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #1F2937;
-    margin: 1em 5em;
+    margin: 0;
 }
 
 
@@ -21,9 +23,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     color: #ffffff;
     padding: 12px 0;
+    width: 80%;
+    margin: auto;
+    
     
 }
 
@@ -47,69 +51,110 @@ a {
 /* First Section */
 
 .section-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto;
+    width: 100%;
+    height: 450px;
     color: #ffffff;
-
-
 }
 
 .box-1{
     display:flex;
-    justify-content: space-between;  
-    height: auto;
-    width: 200px;
-    gap: 2em;
+    justify-content: center;  
+    height: 371px;
+    width: 80%;
+    margin: auto;
+
 }
 
 
 .introduction {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex: 1 1 0;
 }
 
 h1 {
     font-size: 48px;
     font-weight: 900;
     margin: 0;
+}
 
+.introduction button {
+    width: 40%;
+    height: 3em;
+    align-self: flex-start;
+    background-color: #3882F6;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
 }
 
 
 figure {
+    width: 80%;
     height: auto;
-    width: 200px;
-    margin: 0;
 }
+
+figure img{
+    width: 100%;
+    height: auto;
+}
+
+
 
 
 
 /* Section-2 */
 
 .section-2 {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2em;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr ;
+    margin: 2em auto;
+    width: 80%;
+    height: 450px;
 
 }
 
+
 img {
     max-width: 100%;
+    min-width: 20%;
     
 }
 
 
 .images-with-subtext {
-    display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-template-rows: repeat(1, auto);
-	grid-gap: 3rem;
-	width: 100%;
-	margin: 0 auto;
-	padding: 2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60%;
+}
 
+.images-with-subtext p {
+    display: inline-block;
+    text-align: center;
 }
 
 .images-with-subtext img {
     background-color: #565656;
-	border-radius: 7%;
-	box-shadow: .5em .5em 1em #000000;
-	transition: transform 0.3s ease-out;
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+}
+
+/* Section 3*/
+.section-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto;
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
 }
